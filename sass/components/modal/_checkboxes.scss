@@ -1,0 +1,24 @@
+.custom-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 2px;
+}
+
+.modal-form__custom-checkbox {
+    margin-right: 8px;
+}
+
+.modal-form__checkbox:checked+.custom-checkbox {
+    background-image: url('../images/check-icon.svg');
+    background-color: var(--hover-color);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--hover-color);
+}
+
+.modal-form__checkbox:focus+.custom-checkbox {
+    border-color: var(--hover-color);
+}

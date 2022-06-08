@@ -1,0 +1,50 @@
+.occupation__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    color: var(--secondary-text-color);
+
+    &--indent {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.occupation__list {
+    display: flex;
+    justify-content: center;
+}
+
+.occupation__item {
+    position: relative;
+
+    &--indent:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.occupation__text-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--occupation-text-bg-cl);
+}
+
+.occupation__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+}

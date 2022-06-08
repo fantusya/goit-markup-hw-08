@@ -1,0 +1,115 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    color: var(--accent-color);
+    background-color: var(--secondary-background-color);
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.page-footer__contact--indent {
+    margin-right: 70px;
+}
+
+.page-footer__logo {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.page-footer__phys-adress {
+    font-style: normal;
+    line-height: 1.71;
+
+    color: var(--accent-color);
+
+    &--indent {
+        margin-top: 0;
+        margin-bottom: 9px;
+    }
+}
+
+.page-footer__contact-item--indent:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.page-footer__contact-link {
+    font-style: normal;
+    line-height: 1.71;
+
+    color: var(--footer-contact-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
+}
+
+.page-footer__join {
+    margin-right: 93px;
+}
+
+.join__text {
+    display: block;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+
+.mailing__text {
+    display: block;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+
+.mailing-form__input {
+    padding: 15px 16px;
+
+    width: 358px;
+
+    color: var(--footer-mailing-cl);
+    background-color: transparent;
+    border: 1px solid var(--footer-input-border-cl);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+
+    &--indent {
+        margin-right: 12px;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--footer-mailing-cl);
+    }
+}
+
+.mailing-btn::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('../images/send-icon.svg');
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

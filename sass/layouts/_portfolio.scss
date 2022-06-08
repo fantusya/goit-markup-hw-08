@@ -1,0 +1,101 @@
+.portfolio__work-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__work-item {
+    width: calc((100% - 60px) / 3);
+
+    &--indent {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    &--indent:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &--indent:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio__work-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+
+    &__text-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 63px 24px;
+
+        transform: translateY(101%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: var(--portfolio-text-block-cl);
+    }
+}
+
+.portfolio__work-link:hover .product__text-block,
+.portfolio__work-link:focus .product__text-block {
+    transform: translateY(0);
+}
+
+.product__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+
+    color: var(--accent-color);
+
+    &--indent {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.portfolio__project {
+    padding: 20px 24px;
+    border-right: 1px solid var(--portfolio-border-cl);
+    border-left: 1px solid var(--portfolio-border-cl);
+    border-bottom: 1px solid var(--portfolio-border-cl);
+}
+
+.portfolio__project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--secondary-text-color);
+
+    &--indent {
+        margin-top: 0;
+        margin-bottom: 4px;
+        text-align: left;
+    }
+}
+
+.portfolio__project-type {
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--main-text-color);
+
+    &--indent {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

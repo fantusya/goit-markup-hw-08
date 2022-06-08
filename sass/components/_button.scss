@@ -1,0 +1,99 @@
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: var(--accent-color);
+    background-color: var(--hover-color);
+
+    min-width: 200px;
+    padding: 10px 32px;
+    border: none;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-button-hover-color);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    color: var(--second-logo-color);
+    border-radius: 50%;
+    border: 1px solid var(--close-btn-border-cl);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    outline: transparent;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.filter__list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter__btn {
+    min-width: 73px;
+    padding: 6px 22px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-background-color);
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background-color: var(--hover-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.portfolio__btn-list {
+    margin-bottom: 50px;
+}
+
+.portfolio__btn-item:not(:last-child) {
+    margin-right: 8px;
+}
