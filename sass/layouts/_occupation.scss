@@ -1,3 +1,15 @@
+.occupation {
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+    }
+}
+
+.occupation--padding {
+    padding-top: 0px;
+}
+
 .occupation__title {
     font-weight: 700;
     font-size: 36px;

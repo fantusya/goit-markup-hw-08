@@ -7,3 +7,13 @@
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
 }
+
+.mobile-menu.is-closed {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mobile-menu.is-closed .mobile-menu__container {
+    transform: translateX(-100%);
+}

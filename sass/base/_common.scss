@@ -14,7 +14,21 @@ body {
     background-color: var(--accent-color);
 }
 
+// body.modal-open {
+//     overflow: hidden;
+// }
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @include mq(tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+        @include mq(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }

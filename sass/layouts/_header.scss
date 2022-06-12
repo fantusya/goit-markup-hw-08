@@ -1,22 +1,37 @@
 .page-header {
     border-bottom: 1px solid var(--header-border-cl);
+}
 
-    &__container {
-        display: flex;
-        align-items: center;
+.page-header__container {
+    display: flex;
+    align-items: center;
+
+    @include mq(mobile-only) {
+        display: block;
     }
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+}
 
-    &__logo {
+.header-nav__logo {
+
+    @include mq(tablet) {
+        margin-right: 88px;
+    }
+
+    @include mq(desktop) {
         margin-right: 93px;
     }
 }
 
 .menu {
+    @include mq(mobile-only) {
+        display: none;
+    }
+
     display: flex;
 
     &__item:not(:last-child) {
@@ -61,20 +76,43 @@
 }
 
 .page-header__contact-list {
+    @include mq(mobile-only) {
+        display: none;
+    }
+
     display: flex;
     margin-left: auto;
+
+    @include mq(tablet-only) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .page-header__contact-item:not(:last-child) {
-    margin-right: 50px;
+
+    @include mq(desktop) {
+        margin-right: 30px;
+    }
 }
 
 .page-header__contact-link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
+    @include mq(tablet-only) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    @include mq(desktop) {
+        font-size: 14px;
+        line-height: 1.14;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
     font-weight: 500;
     letter-spacing: 0.02em;
 
@@ -90,7 +128,38 @@
 
 .page-header__contact-icon {
     display: inline-block;
-    margin-right: 10px;
+
+    @include mq(tablet-only) {
+        margin-right: 8px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 10px;
+    }
 
     fill: currentColor;
+}
+
+.envelope-icon {
+    @include mq (not-desktop) {
+        width: 14px;
+        height: 10px;
+    }
+
+    @include mq(desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.smartphone-icon {
+    @include mq (not-desktop) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @include mq(desktop) {
+        width: 10px;
+        height: 16px;
+    }
 }

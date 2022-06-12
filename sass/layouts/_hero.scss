@@ -1,13 +1,20 @@
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center; 
+
+    @include mq(not-desktop) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image:
@@ -26,14 +33,25 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
     text-align: center;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include mq(not-desktop) {
+        width: 360px;
+
+        font-size: 26px;
+        line-height: 1.62;
+    }
+
+    @include mq(desktop) {
+        width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
 
     color: var(--accent-color);
 }

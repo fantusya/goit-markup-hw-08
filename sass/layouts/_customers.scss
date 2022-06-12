@@ -1,28 +1,48 @@
 .customers__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
 
     color: var(--secondary-text-color);
 
+    @include mq(desktop) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+
     &--indent {
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
+
+        @include mq(desktop) {
+            margin-top: 0;
+            margin-bottom: 50px;
+            text-align: center;
+        }
     }
 }
 
 .customers__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include mq(desktop) {
+        flex-wrap: nowrap
+    }
 }
 
 .customers__item {
-    width: 170px;
     height: 92px;
 
-    &--indent:not(:last-child) {
-        margin-right: 30px;
+    @include mq(mobile-only) {
+        width: calc((100% - 30px) / 2);   
+    }
+
+     @include mq(tablet) {
+        width: calc((100% - 60px) / 3); 
     }
 }
 

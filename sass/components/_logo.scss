@@ -1,8 +1,18 @@
 .logo {
     font-family: 'Raleway', "Arial", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+
+    @include mq(not-desktop) {
+        font-size: 24px;
+        line-height: 1.17;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    @include mq(desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo__text {
