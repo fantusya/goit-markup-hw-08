@@ -37,7 +37,6 @@
 }
 
 .benefits__item {
-
     @include mq(tablet) {
         width: calc((100% - 30px) / 2);
     }

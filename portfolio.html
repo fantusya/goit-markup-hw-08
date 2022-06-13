@@ -14,23 +14,28 @@
 </head>
 
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="container page-header__container">
             <nav class="header-nav">
-                <a class="logo header-nav__logo link" href="./index.html">
+                <a class="logo header-nav__logo link" href="./index.html" target="_blank">
                     <span class="logo__text">Web</span><span class="logo__text--dark">Studio</span>
                 </a>
                 <ul class="menu list">
                     <li class="menu__item">
-                        <a class="menu__link link" href="./index.html">Студия</a>
+                        <a class="menu__link link link" href="./index.html" target="_blank">Студия</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link menu__link--current" href="./portfolio.html">Портфолио</a>
+                        <a class="menu__link link menu__link--current" href="./portfolio.html" target="_blank">Портфолио</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link link" href="#footer">Контакты</a>
                     </li>
                 </ul>
+                <button data-menu-open class="burger-btn burger-btn--indent" type="button">
+                    <svg class="burger-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use href="./images/icons.svg/symbol-defs.svg#burger-btn"></use>
+                    </svg>
+                </button>
             </nav>
             <ul class="page-header__contact-list list">
                 <li class="page-header__contact-item">
@@ -51,7 +56,7 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <section class="portfolio section">
@@ -68,7 +73,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-1.jpg" alt="Веб-страница на ноутбуке">
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-1_354.jpg 354w, 
+                                        ./images/portfolio/img-1_370.jpg 370w, 
+                                        ./images/portfolio/img-1_450.jpg 450w, 
+                                        ./images/portfolio/img-1_708.jpg 708w,
+                                        ./images/portfolio/img-1_740.jpg 740w,
+                                        ./images/portfolio/img-1_900.jpg 900w"
+                                src="./images/portfolio/img-1_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy"
+                                alt="Веб-страница на ноутбуке">
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -82,8 +99,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-2.jpg" alt="Баскетбольный матч"
-                                    width="" height="294">
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-2_354.jpg 354w, 
+                                        ./images/portfolio/img-2_370.jpg 370w, 
+                                        ./images/portfolio/img-2_450.jpg 450w, 
+                                        ./images/portfolio/img-2_708.jpg 708w,
+                                        ./images/portfolio/img-2_740.jpg 740w,
+                                        ./images/portfolio/img-2_900.jpg 900w"
+                                src="./images/portfolio/img-2_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Баскетбольный матч">
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -100,7 +128,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-3.jpg" alt="Логотип ресторана" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-3_354.jpg 354w, 
+                                        ./images/portfolio/img-3_370.jpg 370w, 
+                                        ./images/portfolio/img-3_450.jpg 450w, 
+                                        ./images/portfolio/img-3_708.jpg 708w,
+                                        ./images/portfolio/img-3_740.jpg 740w,
+                                        ./images/portfolio/img-3_900.jpg 900w"
+                                src="./images/portfolio/img-3_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Логотип ресторана" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -117,7 +157,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-4.jpg" alt="Полноразмерные наушники" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-4_354.jpg 354w, 
+                                        ./images/portfolio/img-4_370.jpg 370w, 
+                                        ./images/portfolio/img-4_450.jpg 450w, 
+                                        ./images/portfolio/img-4_708.jpg 708w,
+                                        ./images/portfolio/img-4_740.jpg 740w,
+                                        ./images/portfolio/img-4_900.jpg 900w"
+                                src="./images/portfolio/img-4_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Полноразмерные наушники" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -134,7 +186,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-5.jpg" alt="Коробки с логотипами" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-5_354.jpg 354w, 
+                                        ./images/portfolio/img-5_370.jpg 370w, 
+                                        ./images/portfolio/img-5_450.jpg 450w, 
+                                        ./images/portfolio/img-5_708.jpg 708w,
+                                        ./images/portfolio/img-5_740.jpg 740w,
+                                        ./images/portfolio/img-5_900.jpg 900w"
+                                src="./images/portfolio/img-5_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Коробки с логотипами" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -151,7 +215,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-6.jpg" alt="Веб-страница на компьютере" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-6_354.jpg 354w, 
+                                        ./images/portfolio/img-6_370.jpg 370w, 
+                                        ./images/portfolio/img-6_450.jpg 450w, 
+                                        ./images/portfolio/img-6_708.jpg 708w,
+                                        ./images/portfolio/img-6_740.jpg 740w,
+                                        ./images/portfolio/img-6_900.jpg 900w"
+                                src="./images/portfolio/img-6_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Веб-страница на компьютере" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -168,7 +244,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-7.jpg" alt="Разворот журнала" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-7_354.jpg 354w, 
+                                        ./images/portfolio/img-7_370.jpg 370w, 
+                                        ./images/portfolio/img-7_450.jpg 450w, 
+                                        ./images/portfolio/img-7_708.jpg 708w,
+                                        ./images/portfolio/img-7_740.jpg 740w,
+                                        ./images/portfolio/img-7_900.jpg 900w"
+                                src="./images/portfolio/img-7_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Разворот журнала" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -185,7 +273,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-8.jpg" alt="Лейбл" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-8_354.jpg 354w, 
+                                        ./images/portfolio/img-8_370.jpg 370w, 
+                                        ./images/portfolio/img-8_450.jpg 450w, 
+                                        ./images/portfolio/img-8_708.jpg 708w,
+                                        ./images/portfolio/img-8_740.jpg 740w,
+                                        ./images/portfolio/img-8_900.jpg 900w"
+                                src="./images/portfolio/img-8_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Лейбл" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -202,7 +302,19 @@
                     <li class="portfolio__work-item portfolio__work-item--indent">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
-                                <img class="product__img" src="./images/portfolio/image-9.jpg" alt="Человек на веб-странице" >
+                                <img class="product__img" 
+                                srcset="./images/portfolio/img-9_354.jpg 354w, 
+                                        ./images/portfolio/img-9_370.jpg 370w, 
+                                        ./images/portfolio/img-9_450.jpg 450w, 
+                                        ./images/portfolio/img-9_708.jpg 708w,
+                                        ./images/portfolio/img-9_740.jpg 740w,
+                                        ./images/portfolio/img-9_900.jpg 900w"
+                                src="./images/portfolio/img-9_450.jpg" 
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw"
+                                width="450"
+                                height="294"
+                                loading="lazy" 
+                                alt="Человек на веб-странице" >
                                 <div class="product__text-block">
                                     <p class="product__description product__description--indent">Ресурс предлагает
                                         комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -287,6 +399,53 @@
         </div>
     </footer>
 
+    <div data-menu class="mobile-menu is-closed">
+        <div class="mobile-menu__container">
+            <button data-menu-close class="mobile-close-btn" type="button">
+                <svg class="mobile-close-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg/symbol-defs.svg#mobile-close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__item mobile-menu__item--indent">
+                    <a href="./index.html" class="mobile-menu__link mobile-menu__link--current link"
+                        target="_blank">Студия</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--indent">
+                    <a href="./portfolio.html" class="mobile-menu__link link" target="_blank">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item mobile-menu__item--indent">
+                    <a href="#footer" class="mobile-menu__link link" target="_blank">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contact-list mobile-menu__contact-list--indent list">
+                <li class="mobile-menu__contact-item mobile-menu__contact-item--indent">
+                    <a href="tel:+380961111111" class="mobile-menu__contact-link mobile-menu__contact-tel link">+38 096 111
+                        11 11</a>
+                </li>
+                <li class="mobile-menu__contact-item mobile-menu__contact-item--indent">
+                    <a href="mailto:info@devstudio.com"
+                        class="mobile-menu__contact-link mobile-menu__contact-mail link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials-list list">
+                <li class="mobile-menu__socials-item mobile-menu__socials-item--indent">
+                    <a href="" class="mobile-menu__socials-link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item mobile-menu__socials-item--indent">
+                    <a href="" class="mobile-menu__socials-link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item mobile-menu__socials-item--indent">
+                    <a href="" class="mobile-menu__socials-link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item mobile-menu__socials-item--indent">
+                    <a href="" class="mobile-menu__socials-link link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

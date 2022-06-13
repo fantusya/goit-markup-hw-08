@@ -59,23 +59,6 @@
 
 }
 
-.team__img {
-    @include mq(mobile) {
-        width: 450px;
-        height: 460px;
-    }
-
-    @include mq(tablet) {
-        width: 354px;
-        height: 374px;
-    }
-    
-    @include mq(desktop) {
-        width: 270px;
-        height: 260px;
-    }
-}
-
 .team__text-block {
     display: flex;
     align-items: center;

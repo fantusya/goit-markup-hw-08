@@ -1,5 +1,4 @@
 .portfolio__work-list {
-
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -8,7 +7,6 @@
 }
 
 .portfolio__work-item {
-
     @include mq(mobile-only) {
         width: 100%;
 
@@ -65,22 +63,6 @@
 .portfolio__work-link:hover .product__text-block,
 .portfolio__work-link:focus .product__text-block {
     transform: translateY(0);
-}
-
-.product__img {
-    height: 294px;
-
-    @include mq(mobile) {
-        width: 450px;
-    }
-
-    @include mq(tablet) {
-        width: 354px;
-    }
-
-    @include mq(tablet) {
-        width: 370px;
-    }
 }
 
 .product__description {

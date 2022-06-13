@@ -14,9 +14,13 @@ body {
     background-color: var(--accent-color);
 }
 
-// body.modal-open {
-//     overflow: hidden;
-// }
+body.modal-open {
+    overflow: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
 
 .section {
     padding-top: 60px;
