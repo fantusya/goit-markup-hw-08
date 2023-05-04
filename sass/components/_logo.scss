@@ -2,6 +2,11 @@
     font-family: 'Raleway', "Arial", sans-serif;
     font-weight: 700;
 
+    @include mq(mobile-only) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     @include mq(not-desktop) {
         font-size: 24px;
         line-height: 1.17;
