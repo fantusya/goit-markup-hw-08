@@ -63,14 +63,14 @@
             <div class="container">
                 <h1 class="portfolio__hero visually-hidden">Portfolio</h1>
                 <ul class="filter__list portfolio__btn-list list">
-                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button">All</button></li>
-                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button">Web-sites</button></li>
-                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button">Apps</button></li>
-                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button">Design</button></li>
-                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button">Marketing</button></li>
+                    <li class="filter__item portfolio__btn-item"><button class="filter__btn filter__btn--active" type="button" data-value="all">All</button></li>
+                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button" data-value="webSites">Web-sites</button></li>
+                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button" data-value="apps">Apps</button></li>
+                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button" data-value="design">Design</button></li>
+                    <li class="filter__item portfolio__btn-item"><button class="filter__btn" type="button" data-value="marketing">Marketing</button></li>
                 </ul>
                <ul class="portfolio__work-list list">
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="webSites">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -96,7 +96,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="design">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -122,7 +122,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="apps">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -148,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="marketing">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -174,7 +174,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="apps">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -200,7 +200,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="webSites">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -227,7 +227,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="design">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -254,7 +254,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="marketing">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -281,7 +281,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__work-item portfolio__work-item--indent">
+                    <li class="portfolio__work-item portfolio__work-item--indent" data-value="apps">
                         <a class="portfolio__work-link link" href="">
                             <div class="product">
                                 <img class="product__img" 
@@ -425,6 +425,8 @@
     </div>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filterPortfolio.js"></script>
+
 </body>
 
 </html>
